@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Lalit_Consultation>
+            <version>0.1.0</version>
+        </Lalit_Consultation>
+    </modules>
+    <frontend>
+        <routers>
+            <consultation>
+                <use>standard</use>
+                <args>
+                    <module>Lalit_Consultation</module>
+                    <frontName>consultation</frontName>
+                </args>
+            </consultation>
+        </routers>
+        <layout>
+            <updates>
+                <consultation>
+                    <file>consulation.xml</file>
+                </consultation>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <consultation>
+                <class>Lalit_Consultation_Block</class>
+            </consultation>
+
+        </blocks>
+        <helpers>
+            <consultation>
+                <class>Lalit_Consultation_Helper</class>
+            </consultation>
+        </helpers>
+    </global>
+</config>
